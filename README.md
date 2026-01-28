@@ -1,18 +1,34 @@
 # 🔐 Password Strength Tester (Java)
 
-## 1. Project Title & Goal
-This program validates password strength by checking if passwords meet minimum security requirements (8+ characters, at least one number, and at least one special character), displaying PASS/FAIL results for predefined passwords and user input.
+A Java console application that checks whether a password meets basic security requirements such as minimum length, presence of numbers, and special characters. The program tests predefined passwords and also allows the user to validate their own password.
 
 ---
 
-## 2. Setup Instructions
+## 📌 Project Overview
 
-### Prerequisites
-- Java JDK 8 or higher installed
-- Command Prompt / Terminal / PowerShell
+Password security is an important part of any application.  
+This project demonstrates how to validate password strength using **Java** and **Regular Expressions (Regex)**.
 
-### Commands to Run
+The application:
+- Tests a list of predefined passwords.
+- Accepts a password from the user at runtime.
+- Validates each password using security rules.
+- Displays whether each password is **PASS (Strong)** or **FAIL (Weak)**.
 
-**Compile the program:**
-```bash
-javac PasswordTester.java
+---
+
+## ✅ Password Validation Rules
+
+A password is considered **STRONG** if:
+
+1. 🔒 It has at least **8 characters**.
+2. 🔢 It contains at least **one numeric digit (0–9)**.
+3. ⭐ It contains at least **one special character**  
+   Example: `! @ # $ % ^ & * ( ) , . ? " : { } | < >`
+
+If any rule fails, the password is marked as **WEAK**.
+
+---
+
+## 📂 Project Structure
+
